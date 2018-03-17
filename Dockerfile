@@ -1,5 +1,9 @@
 FROM python:3.6.4
 
+RUN mkdir /var/tensorflask && chown -R nobody:nogroup /var/tensorflask
+
+WORKDIR /var
+
 USER nobody
 
 RUN git clone https://github.com/JoelKronander/TensorFlask.git tensorflask \
