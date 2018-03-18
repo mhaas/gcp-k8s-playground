@@ -12,7 +12,7 @@ RUN git clone https://github.com/JoelKronander/TensorFlask.git tensorflask \
 
 WORKDIR /var/tensorflask
 
-USER ROOT
+USER root
 
 RUN pip3 install numpy \
     && pip3 install -r requirements.txt \
